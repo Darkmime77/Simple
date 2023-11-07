@@ -1,0 +1,296 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("fonts/Roboto-Regular.ttf");
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 11%;
+    padding-right: 11%;
+    padding-top: 28px;
+}
+
+.header__text {
+    width: 703px;
+    display: flex;
+    justify-content: space-between;
+    color: #4C5866;
+    font-family: "Roboto";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.header__texts {
+    color: #4C5866;
+    text-decoration: none;
+}
+
+.PlanViz {
+    display: none;
+}
+
+.PlanViz__Mobile {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.spacer {
+    height: 1px;
+    background-color: #DDDDDD;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.spacer1 {
+    display: none;
+    height: 1px;
+    background-color: #DDDDDD;
+    margin-top: 20px;
+}
+
+
+.header__text1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #4C5866;
+    font-family: "Roboto";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 11%;
+    padding-right: 11%;
+}
+
+.header__text2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    gap: 30px;
+    color: #4C5866;
+    font-family: "Roboto";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 11%;
+    padding-right: 11%;
+}
+
+.hero {
+    height: 620px;
+    padding-left: 11%;
+    padding-right: 11%;
+    padding-top: 60px;
+}
+
+.hero__block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.hero__info button {
+    width: 255px;
+    height: 70px;
+    padding: 20px 50px;
+    border: 1px solid #7875FE;
+    background: white;
+    color: #7875FE;
+    font-family: "Roboto";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.hero__info p {
+    max-width: 445px;
+    color: #85859B;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.hero__info h1 {
+    max-width: 444px;
+    color: #4C5866;
+    font-family: "Roboto";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.hero__img {
+    max-width: 540px;
+    height: 620px;
+}
+
+.hero__imgHero {
+    max-width: 100%;
+    height: 1336px;
+}
+
+.text-center {
+    padding-top: 90px;
+    background-color: #EBEBEB;
+    position: relative;
+    padding-left: 11%;
+    padding-right: 11%;
+}
+
+.reod {
+    display: flex;
+}
+
+.boot__mob {
+    display: none;
+}
+
+.btn-catalog {
+    padding-top: 90px;
+    padding-left: 11%;
+    padding-right: 11%;
+    background-color: #EBEBEB;
+    position: relative;
+}
+.row__imgs{
+    max-width: 730px;
+    height: 564px;
+}
+.row__img {
+    max-width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width:768px) {
+    .header__text {
+        display: flex;
+        justify-content: right;
+        gap: 30px;
+    }
+
+    .header .header__texts {
+        display: none;
+    }
+
+    .PlanViz {
+        display: block;
+    }
+
+    .spacer1 {
+        display: block;
+    }
+
+    .header__text1 {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .hero {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .hero__img {
+        height: 620px;
+    }
+
+    .hero__imgHero {
+        height: 668px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .boot__mob {
+        display: block;
+    }
+
+    .text-center {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .row__imgs{
+        width: 330px;
+        height: 256px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .header__text {
+        display: none;
+    }
+
+    .PlanViz__text {
+        display: none;
+    }
+
+    .PlanViz__Mobile {
+        display: flex;
+    }
+
+    .header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .PlanViz__Mobile {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .hero {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .hero__img {
+        display: none;
+    }
+
+    .boot__mob {
+        display: none;
+    }
+
+    .nav {
+        display: flex;
+    }
+
+    .boot__mob {
+        display: none;
+    }
+
+    .text-center {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
